@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+	    				{% for dest in dests %}
+
+						<!-- Destination -->
+						<div>
+						</div>
+						<div class="destination item">
+							<div class="destination_image">
+								<img src="{{dest.img.url}}" alt="" width="1000" height="700">
+								
+							</div>
+							
+						</div>
+						{% endfor %}
+    </form>
+    <div>
+        
+
+
+</body>
+</html>
